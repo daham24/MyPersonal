@@ -1,0 +1,759 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* ====================================Header */
+
+/* CSS to style the logo */
+.logo {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  /* border: 1px solid red; */
+}
+.logo:hover {
+  cursor: pointer;
+}
+
+.logo img {
+  width: 169px; /* Set the desired width for your logo */
+  height: auto;
+  align-items: center; /* Maintain the aspect ratio */
+}
+/* CSS to style the navigation bar */
+.header-outer {
+  margin-top: 22px;
+  background-color: transparent;
+  /* border: 1px solid red; */
+  box-shadow: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end !important;
+}
+.navbar-toggler {
+  outline: none;
+  border: none;
+}
+.item {
+  font-family: "Karla", sans-serif;
+  font-weight: lighter !important;
+  text-decoration: none;
+  color: #eaedef !important;
+  /* border: 1px solid red; */
+  margin-right: 5%;
+}
+
+.item:hover {
+  cursor: pointer;
+  color: #ffd60a !important;
+  transition: 0.5s !important;
+}
+
+/* ====================================Main Banner  */
+
+.main-banner-outer {
+  width: 100%;
+  height: 100vh;
+  /* border: 1px solid red; */
+  background-image: url("./assets/MainBG.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+}
+
+/* ====================================Hero Section  */
+.hero-outer {
+  width: auto;
+  height: auto;
+  /* border: 1px solid red; */
+  /* position: absolute; */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 2%;
+}
+
+.box1 {
+  width: 100px;
+  height: auto;
+  margin-top: 5%;
+  /* border: 1px solid red; */
+}
+.text1 {
+  color: #ffd60a;
+  font-family: Karla;
+  font-size: 90px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 90px;
+}
+.text2 {
+  color: #eaedef;
+  font-family: Karla;
+  font-size: 90px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 90px;
+}
+.box2 {
+  height: auto;
+  margin-top: 15px;
+  padding: 0;
+  /* border: 1px solid red; */
+}
+.social-media {
+  display: flex;
+  align-items: flex-start;
+  padding: 14px 20px 14px 20px;
+  /* border: 1px solid red; */
+  margin-left: 17%;
+}
+.social-icon {
+  width: 22px;
+  height: auto;
+  margin-right: 10%;
+}
+.social-icon:hover {
+  cursor: pointer;
+  width: 24px;
+  height: auto;
+  transition: 0.2s;
+  transition-timing-function: ease-in;
+}
+
+.box1 h5 {
+  font-family: Karla;
+  color: white;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 24.5px;
+  font-style: normal;
+  text-align: left;
+}
+
+/* ===================================About Section */
+
+.about-outer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  /* border: 1px solid red; */
+}
+.about {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  /* border: 1px solid red; */
+  background-image: url("./assets/mypicbg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  /* border: 1px solid red; */
+}
+.mypic {
+  position: absolute;
+  width: auto;
+  height: auto;
+  z-index: 2;
+  left: 10%;
+  /* border: 1px solid red; */
+}
+.mypic img {
+  width: 100%;
+  height: auto;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+.mypic img:hover {
+  width: 105%;
+  height: auto;
+}
+.mypicbg {
+  width: 100%;
+  height: auto;
+  /* margin-left: 400px; */
+  position: absolute;
+  opacity: 0.5;
+}
+.aboutme {
+  width: 40% !important;
+  height: 100vh;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  /* border: 1px solid red; */
+  margin: 15% !important;
+  padding-left: 5% !important;
+}
+
+.para1 {
+  color: #284b63;
+  text-align: justify;
+  font-family: "Lato", sans-serif;
+  font-size: 57px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100px;
+  text-align: left;
+  /* margin-left: 15%; */
+  /* border: 1px solid red; */
+}
+.para2 {
+  width: 80%;
+  text-align: left;
+  color: #182d3b;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  position: relative;
+  /* margin-left: 15%; */
+}
+.learn {
+  background-color: transparent;
+  border-radius: 45px;
+  border-color: #284b63;
+  display: flex;
+  padding: 10px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  color: #284b63;
+  text-align: justify;
+  font-family: Karla;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  border-style: solid;
+  /* margin-left: 15%; */
+}
+.learn:hover {
+  cursor: pointer;
+  background-color: #284b63;
+  color: white;
+  transition: 0.5s;
+}
+
+/* ===================================Services Section */
+.services {
+  width: 100%;
+  height: 100vh;
+  /* border: 1px solid red; */
+  /* position: relative; */
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.services img {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+}
+.para3 {
+  /* border: 1px solid red; */
+  color: #eaedef;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  font-size: 57px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 56px;
+  position: relative;
+  padding-top: 100px;
+}
+.box3 {
+  /* border: 1px solid red; */
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 80px !important;
+}
+.card1 {
+  /* border: 1px solid red; */
+  display: inherit;
+  /* flex: 1; */
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  grid: 15px;
+  width: 20%;
+  height: auto;
+  padding: 10px 30px !important;
+}
+.item-1 {
+  left: 0;
+  gap: 10px;
+}
+.item-2 {
+  right: 0;
+  gap: 10px;
+}
+.item-3 {
+  left: 0;
+  bottom: 0;
+  gap: 10px;
+}
+.item-4 {
+  right: 0;
+  bottom: 0;
+  gap: 10px;
+}
+span {
+  color: #eaedef;
+  text-align: justify;
+  font-family: Karla;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 56px;
+  position: relative;
+}
+.card1 img {
+  width: 60px;
+  height: 60px;
+  position: relative;
+}
+.para4 {
+  width: 80%;
+  color: #eaedef;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 18px;
+  position: relative;
+  font-weight: 300;
+}
+.explore {
+  background-color: transparent;
+  border-radius: 45px;
+  border-color: #eaedef;
+  display: flex;
+  padding: 10px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  bottom: -8%;
+  color: #eaedef;
+  text-align: justify;
+  font-family: Karla;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  position: relative;
+  border-style: solid;
+}
+.explore:hover {
+  background-color: #eaedef;
+  color: #284b63;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+/* ===================================Skill Section */
+.skills {
+  width: 100%;
+  height: 100vh;
+  /* border: 1px solid red; */
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-image: url("./assets/skillbg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+}
+.outer {
+  /* border: 1px solid red; */
+  width: 600px;
+  height: auto;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.icons {
+  width: 40%;
+  height: auto;
+  /* border: 1px solid red; */
+  right: 300px;
+  top: 340px;
+  display: flex;
+  justify-content: space-between;
+}
+.item2 {
+  width: 80px;
+  height: auto;
+  /* border: 1px solid red; */
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-between;
+}
+.item2 img {
+  width: 80px;
+  height: 80px;
+}
+.text {
+  width: 80px;
+}
+.para2 {
+  margin-bottom: 30px;
+}
+
+/* ===================================Contact Section */
+.contact {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  /* border: 1px solid red; */
+  justify-content: center;
+  background-image: url("./assets/contactbg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.getin {
+  position: absolute;
+  color: #284b63;
+  text-align: justify;
+  font-family: Karla;
+  font-size: 57px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 56px;
+  top: 78px;
+}
+.contimg {
+  width: 706px;
+  height: 106px;
+  /* border: 1px solid red; */
+  position: absolute;
+  top: 200px;
+  gap: 35px;
+  display: flex;
+}
+.cont-inner {
+  width: 150px;
+  height: 106px;
+  /* border: 1px solid red; */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+}
+.cont-inner img {
+  width: 40px;
+  height: 40px;
+}
+.para5 {
+  color: #284b63;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+}
+.sendme {
+  color: #284b63;
+  text-align: justify;
+  font-family: Karla;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100px;
+}
+.form-outer {
+  width: 70% !important;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 10%;
+  padding: 2% 5%;
+  /* border: 1px solid red; */
+}
+.submit {
+  width: 105px;
+  height: 36px;
+  border-radius: 45px;
+  border: 1px solid #284b63;
+  background-color: transparent;
+  display: flex;
+  padding: 10px 24px;
+  justify-content: center;
+  align-items: center;
+  color: #284b63;
+  text-align: justify;
+  font-family: Karla;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  margin-left: 2%;
+  margin-top: 5% !important;
+}
+.submit:hover {
+  background-color: #284b63;
+  cursor: pointer;
+  color: #eaedef;
+}
+
+.lable1 {
+  color: #284b63;
+  font-family: Karla;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+}
+.field input {
+  border-style: none;
+  border-radius: 35px;
+  padding: 10px;
+  font-size: 14px;
+  background: #eaedef;
+  font-family: Karla;
+  color: #284b63;
+}
+
+textarea::placeholder,
+input::placeholder {
+  color: #bfc9d0;
+}
+
+textarea:focus,
+input:focus {
+  border: none;
+  outline: none;
+}
+
+.field textarea {
+  height: 100%;
+  border-style: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 14px;
+  resize: vertical;
+  border-radius: 20px;
+  background: #eaedef;
+  font-family: Karla;
+  color: #284b63;
+}
+
+.field {
+  width: 100%;
+  height: auto;
+  /* border: 1px solid red; */
+  margin: 20px 0px;
+}
+.fields {
+  /* border: 1px solid red; */
+  height: auto;
+  width: 100%;
+  justify-content: flex-start;
+}
+.footer {
+  width: 100% !important;
+  position: absolute;
+  bottom: 0;
+}
+.ui {
+  /* border: 1px solid red; */
+  width: 100%;
+  height: 49px;
+  display: flex;
+  background-color: white;
+  background-origin: 0;
+  bottom: 0;
+  justify-content: center;
+  align-items: center;
+  color: #284b63;
+  text-align: center;
+  font-family: Karla;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+}
+/* ===================================Contact Section */
+
+/* Tablets */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .main-banner-outer {
+    height: 100vh;
+    background-size: cover;
+  }
+  .box2 {
+    height: auto;
+  }
+  .box1 h5 {
+    font-size: medium;
+    line-height: 20px;
+    font-weight: lighter;
+  }
+  .text1 {
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 80px;
+  }
+  .text2 {
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 80px;
+  }
+
+  /* =========================About Section */
+  .mypic {
+    width: 30%;
+  }
+  /* =========================Skill Section */
+  .icons {
+    margin-right: 15%;
+  }
+  .item2 {
+    padding-bottom: 20px;
+  }
+  .myskills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Smartphones */
+@media only screen and (max-width: 768px) {
+  /* =========================Main Banner Section */
+
+  .box1 {
+    margin-top: 20%;
+    /* border: 1px solid red; */
+  }
+  .box2 {
+    height: auto;
+    /* border: 1px solid red; */
+  }
+  .box1 h5 {
+    font-weight: lighter;
+  }
+  .text1 {
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 80px;
+  }
+  .text2 {
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 80px;
+  }
+  .social-media {
+    margin-left: 0;
+  }
+  /* =========================About Section */
+  .mypic {
+    width: 30%;
+  }
+  /* =========================Skill Section */
+  .item2 {
+    margin-bottom: 30px;
+  }
+  .myskills {
+    margin-left: 20%;
+  }
+}
+
+/* Media query for iPhone SE */
+@media only screen and (max-width: 375px) {
+  .logo img {
+    width: 60%;
+    /* border: 1px solid red; */
+  }
+  .box1 {
+    margin-top: 0%;
+    /* border: 1px solid red; */
+  }
+  .box2 {
+    height: auto;
+  }
+  .box1 h5 {
+    font-weight: lighter;
+  }
+  .text1 {
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px;
+  }
+  .text2 {
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px;
+  }
+  .social-media {
+    margin-left: 0;
+  }
+  /* =========================About Section */
+  .about {
+    width: 100vw;
+    flex-direction: column;
+    background-image: url("./assets/AboutBg.png");
+    background-size: contain;
+  }
+  .mypic {
+    display: none;
+  }
+  .aboutme {
+    width: 100% !important;
+    height: 100vh;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid red; */
+    margin: 15% !important;
+    padding-left: 5% !important;
+  }
+  .para1 {
+    font-size: 50px;
+    line-height: 50px;
+  }
+  .para2 {
+    text-align: center;
+  }
+}
